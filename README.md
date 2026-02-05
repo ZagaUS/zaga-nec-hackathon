@@ -1,44 +1,40 @@
 # CATEGORY-1
 
 ## Data Structures & Logic
-Q1. Find All Palindrome Words
+Q1. Shift Zeros to End
 # Problem:
-From a list of words, print only palindrome words.
+Move all zeros in a list to the end while maintaining the order of other elements.
 # Sample Input:
-words = ["level", "data", "radar", "ml", "madam"]
+nums = [0, 3, 0, 1, 5, 0, 2]
 # Sample Output:
-['level', 'radar', 'madam']
-
+[3, 1, 5, 2, 0, 0, 0]
 
 ________________________________________
 # CATEGORY-2
 
 ## Coding for ML Context
 
-Q1. Remove Outliers in Salary (>70000)
-## Problem:
-1.	Remove records where salary > 70000
+Q1. Create Binary Feature for Age > 30
+# Problem:
+1.	Create is_senior (age > 30 → 1 else 0)
 # Input:
-data = [
-    {"salary": 50000}, {"salary": 80000}, {"salary": 60000}
-]	
+data = [{"age": 25}, {"age": 35}, {"age": 30}]
 # Output:
-[{'salary': 50000}, {'salary': 60000}]
-
-
+[0, 1, 0]
 
 ________________________________________
 
 # CATEGORY-3
 
 ## ML Fundamentals
-Question 1 – Manual Train-Test Split
+
+Question 1 – Detect Outliers Using Threshold
 # Problem
-Split data into 80% train and 20% test.
+Remove salaries above 100000.
 # Input
-data = [1,2,3,4,5,6,7,8,9,10]
+data = [{"salary": 50000}, {"salary": 120000}, {"salary": 70000}]
 # Output
-Train: [1,2,3,4,5,6,7,8]
-Test: [9,10]
+[{'salary': 50000}, {'salary': 70000}]
+
 # Conceptual Question
-Q: Why is train-test split necessary?
+Q: Why remove outliers?
