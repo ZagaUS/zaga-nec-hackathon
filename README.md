@@ -1,37 +1,31 @@
 # CATEGORY-1
 
 ## Data Structures & Logic
-Q1. Find Element with Maximum Frequency
+
+Q1. Group Tuples by First Element
 # Problem:
-Print the element that appears the most in a list.
+Group values from a list of tuples based on the first element.
 # Sample Input:
-nums = [4, 1, 2, 2, 3, 2, 4, 4, 4]
+data = [("x", 1), ("y", 2), ("x", 3), ("y", 4)]
 # Sample Output:
-4
+{'x': [1, 3], 'y': [2, 4]}
+
 
 ________________________________________
 # CATEGORY-2
 
 ## Coding for ML Context
 
-Q1. Encode Yes/No and Fill Missing Experience
-## Problem:
-1.	Replace missing experience with median experience
-2.	Encode remote_work (Yes → 1, No → 0)
-3.	Remove records with missing department
-# Input:	
+Q1. Create Interaction Feature
+# Problem:
+Create salary_per_age = salary / age.
+# Input:
 data = [
-    {"department": "IT", "experience": 3, "remote_work": "Yes"},
-    {"department": "HR", "experience": None, "remote_work": "No"},
-    {"department": None, "experience": 5, "remote_work": "Yes"},
-    {"department": "IT", "experience": 2, "remote_work": "No"}
+    {"age": 25, "salary": 50000},
+    {"age": 40, "salary": 80000}
 ]
 # Output:
-[
- {'department': 'IT', 'experience': 3, 'remote_work': 1},
- {'department': 'HR', 'experience': 3, 'remote_work': 0},
- {'department': 'IT', 'experience': 2, 'remote_work': 0}
-]
+[2000.0, 2000.0]
 
 ________________________________________
 
@@ -39,20 +33,22 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 1 – Identify Constant Features
+Question 1 – Handle Class Imbalance by Undersampling
 ## Problem
-Identify features with no variance.
+Reduce majority class samples to match minority class count.
 # Input
 data = [
-    {"age": 25, "country": "IN"},
-    {"age": 30, "country": "IN"},
-    {"age": 35, "country": "IN"}
+    {"label": 0},
+    {"label": 0},
+    {"label": 0},
+    {"label": 1}
 ]
 # Output
-['country']
+[{'label': 0}, {'label': 1}]
 
 # Conceptual Question
-Q: Why remove constant features?
+Q: Why handle class imbalance?
+
 
 
 
