@@ -1,42 +1,37 @@
 # CATEGORY-1
 
 ## Data Structures & Logic
-Q1. Remove Keys with None Values
+Q1. Find Element with Maximum Frequency
 # Problem:
-Remove all keys with value None from a dictionary.
+Print the element that appears the most in a list.
 # Sample Input:
-data = {"a": 1, "b": None, "c": 3, "d": None}
+nums = [4, 1, 2, 2, 3, 2, 4, 4, 4]
 # Sample Output:
-{'a': 1, 'c': 3}
-
+4
 
 ________________________________________
 # CATEGORY-2
 
 ## Coding for ML Context
 
-Q1. Replace Missing Height with Mean and Encode Weight Status
+Q1. Encode Yes/No and Fill Missing Experience
 ## Problem:
-You are given a dataset. Perform the following:
-1.	Replace missing height with mean height
-2.	Encode weight_status column (Overweight → 1, Normal → 0)
-3.	Remove records where age is missing
-	
-
-# Input:
+1.	Replace missing experience with median experience
+2.	Encode remote_work (Yes → 1, No → 0)
+3.	Remove records with missing department
+# Input:	
 data = [
-    {"age": 25, "height": 170, "weight_status": "Normal"},
-    {"age": 30, "height": None, "weight_status": "Overweight"},
-    {"age": None, "height": 165, "weight_status": "Normal"},
-    {"age": 22, "height": 160, "weight_status": "Normal"}
+    {"department": "IT", "experience": 3, "remote_work": "Yes"},
+    {"department": "HR", "experience": None, "remote_work": "No"},
+    {"department": None, "experience": 5, "remote_work": "Yes"},
+    {"department": "IT", "experience": 2, "remote_work": "No"}
 ]
 # Output:
 [
- {'age': 25, 'height': 170, 'weight_status': 0},
- {'age': 30, 'height': 167, 'weight_status': 1},
- {'age': 22, 'height': 160, 'weight_status': 0}
+ {'department': 'IT', 'experience': 3, 'remote_work': 1},
+ {'department': 'HR', 'experience': 3, 'remote_work': 0},
+ {'department': 'IT', 'experience': 2, 'remote_work': 0}
 ]
-
 
 ________________________________________
 
@@ -44,18 +39,20 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 1 – Calculate Feature Mean by Group
-# Problem
-Calculate average salary per department.
+Question 1 – Identify Constant Features
+## Problem
+Identify features with no variance.
 # Input
 data = [
-    {"dept": "IT", "salary": 60000},
-    {"dept": "HR", "salary": 40000},
-    {"dept": "IT", "salary": 80000}
+    {"age": 25, "country": "IN"},
+    {"age": 30, "country": "IN"},
+    {"age": 35, "country": "IN"}
 ]
 # Output
-{'IT': 70000, 'HR': 40000}
+['country']
 
-## Conceptual Question
-Q: Why do we create group-based features?
+# Conceptual Question
+Q: Why remove constant features?
+
+
 
