@@ -17,7 +17,7 @@ ________________________________________
 
 ## Coding for ML Context
 
-Q4. Normalize Salary Using Min-Max Scaling
+Q1. Normalize Salary Using Min-Max Scaling
 # Problem:
 Scale salary between 0 and 1.
 # Input:
@@ -38,7 +38,7 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 4 – Feature Interaction
+Question 1 – Feature Interaction
 ## Problem:
 You have a dataset with experience_years and education_level (Bachelor=1, Master=2, PhD=3).
 Create a new feature experience_edu = experience_years * education_level.
