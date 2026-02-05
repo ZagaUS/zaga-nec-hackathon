@@ -2,13 +2,14 @@
 
 ## Data Structures & Logic
 
-Q1. Palindrome Check Ignoring Spaces
+Q1. Count Vowels Using Dictionary
 # Problem:
-Check if the given string is a palindrome (ignore spaces and case).
-# Sample Input:
-text = "Never odd or even"
+Count each vowel in a string.
+# Sample Input:	
+text = "artificial intelligence"
 # Sample Output:
-Palindrome
+{'a': 2, 'i': 5, 'e': 3}
+
 
 
 
@@ -16,18 +17,18 @@ ________________________________________
 # CATEGORY-2
 
 ## Coding for ML Context
-
-Q4. Normalize Salary Using Min-Max Scaling
+Q1. Drop Duplicate Records
 # Problem:
-Scale salary between 0 and 1.
+Remove duplicate records based on id.
 # Input:
 data = [
-    {"salary": 40000},
-    {"salary": 60000},
-    {"salary": 80000}
+    {"id": 1, "score": 80},
+    {"id": 2, "score": 90},
+    {"id": 1, "score": 80}
 ]
 # Output:
-[0.0, 0.5, 1.0]
+[{'id': 1, 'score': 80}, {'id': 2, 'score': 90}]
+
 
 
 
@@ -38,23 +39,21 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 4 – Feature Interaction
+Question 1 – Simple Class Imbalance Count
+
 ## Problem:
-You have a dataset with experience_years and education_level (Bachelor=1, Master=2, PhD=3).
-Create a new feature experience_edu = experience_years * education_level.
+You are given a binary target variable churn. Count how many 1s and 0s exist.
 # Input:
 data = [
-    {"experience_years": 2, "education_level": 1},
-    {"experience_years": 5, "education_level": 2},
-    {"experience_years": 10, "education_level": 3}
+    {"customer_id": 101, "churn": 1},
+    {"customer_id": 102, "churn": 0},
+    {"customer_id": 103, "churn": 1},
+    {"customer_id": 104, "churn": 0},
+    {"customer_id": 105, "churn": 1}
 ]
 # Output:
-[
- {'experience_years': 2, 'education_level': 1, 'experience_edu': 2},
- {'experience_years': 5, 'education_level': 2, 'experience_edu': 10},
- {'experience_years': 10, 'education_level': 3, 'experience_edu': 30}
-]
+Churn = 3
+No Churn = 2
+
 # Conceptual Question:
-Q: Why might interaction features improve model performance?
-
-
+Q: Why is it important to know class distribution before training a classification model?
