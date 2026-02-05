@@ -2,40 +2,29 @@
 
 ## Data Structures & Logic
 
-Q1. Count Uppercase and Lowercase Letters
+Q1. Rotate List by K Positions
 # Problem:
-Count uppercase and lowercase letters in a string.
+Rotate a list to the right by k positions.
 # Sample Input:
-text = "AIandMLAreFUN"
+arr = [10, 20, 30, 40, 50]
+k = 2
 # Sample Output:
-Uppercase: 7
-Lowercase: 6
+[40, 50, 10, 20, 30]
 
 ________________________________________
 # CATEGORY-2
 
 ## Coding for ML Context
 
-Q1. Fill Missing Score and Encode Pass/Fail
-
-## Problem:
-1.	Replace missing score with mean score
-2.	Encode result (Pass → 1, Fail → 0)
-3.	Remove records with missing name
+Q1 . Feature Selection
+# Problem:
+Keep only numeric features.
 # Input:
 data = [
-    {"name": "Alice", "score": 85, "result": "Pass"},
-    {"name": "Bob", "score": None, "result": "Fail"},
-    {"name": None, "score": 90, "result": "Pass"},
-    {"name": "Charlie", "score": 70, "result": "Pass"}
+    {"age": 25, "name": "A", "salary": 50000}
 ]
 # Output:
-[
- {'name': 'Alice', 'score': 85, 'result': 1},
- {'name': 'Bob', 'score': 78, 'result': 0},
- {'name': 'Charlie', 'score': 70, 'result': 1}
-]
-
+[{'age': 25, 'salary': 50000}]
 
 
 ________________________________________
@@ -44,21 +33,26 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 1 – Normalize Feature Using Min-Max Scaling
-## Problem
-Normalize the feature age using Min-Max scaling without libraries.
-# Input
+Question 1 – Handling Missing Categorical Values
+## Problem:
+You are given a dataset of customers with job_role. Fill missing job_role with "Unknown" and encode as integers (assign unique integer per category).
+# Input:
 data = [
-    {"age": 18},
-    {"age": 25},
-    {"age": 40},
-    {"age": 60}
+    {"name": "Alice", "job_role": "Engineer"},
+    {"name": "Bob", "job_role": None},
+    {"name": "Charlie", "job_role": "Analyst"},
+    {"name": "David", "job_role": "Engineer"}
 ]
-# Output
-[0.0, 0.1667, 0.4583, 1.0]
+# Output:
+[
+ {'name': 'Alice', 'job_role': 0},
+ {'name': 'Bob', 'job_role': 2},
+ {'name': 'Charlie', 'job_role': 1},
+ {'name': 'David', 'job_role': 0}
+]
+# Conceptual Question:	
+Q: Why do we encode categorical variables as integers?
 
-## Conceptual Question
-Q: Why is feature scaling important?
 
 
 
