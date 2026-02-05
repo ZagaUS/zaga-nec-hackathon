@@ -1,37 +1,30 @@
 # CATEGORY-1
 
 ## Data Structures & Logic
-Q1. Find Missing Numbers in a Range
+Q1. Find All Palindrome Words
 # Problem:
-Given a list of integers, find the missing numbers between the minimum and maximum values.
+From a list of words, print only palindrome words.
 # Sample Input:
-nums = [3, 7, 1, 2, 8, 4]
+words = ["level", "data", "radar", "ml", "madam"]
 # Sample Output:
-[5, 6]
+['level', 'radar', 'madam']
+
 
 ________________________________________
 # CATEGORY-2
 
 ## Coding for ML Context
 
-Q1. Fill Missing Score with Median and Encode Pass Column
+Q1. Remove Outliers in Salary (>70000)
 ## Problem:
-1.	Replace missing score with median score
-2.	Encode passed column (Yes → 1, No → 0)
+1.	Remove records where salary > 70000
 # Input:
 data = [
-    {"score": 80, "passed": "Yes"},
-    {"score": None, "passed": "No"},
-    {"score": 90, "passed": "Yes"},
-    {"score": 70, "passed": "No"}
-]
+    {"salary": 50000}, {"salary": 80000}, {"salary": 60000}
+]	
 # Output:
-[
- {'score': 80, 'passed': 1},
- {'score': 80, 'passed': 0},
- {'score': 90, 'passed': 1},
- {'score': 70, 'passed': 0}
-]
+[{'salary': 50000}, {'salary': 60000}]
+
 
 
 ________________________________________
@@ -39,23 +32,13 @@ ________________________________________
 # CATEGORY-3
 
 ## ML Fundamentals
-Question 1 – Count Encoding
-# Problem:
-Given a column city, replace each city with the count of its occurrence.
-# Input:
-data = [
-    {"city": "NY"},
-    {"city": "LA"},
-    {"city": "NY"},
-    {"city": "SF"}
-]
-# Output:
-[
- {'city': 2},
- {'city': 1},
- {'city': 2},
- {'city': 1}
-]
-# Conceptual Question:	
-Q: What is count encoding and when is it useful?
-
+Question 1 – Manual Train-Test Split
+# Problem
+Split data into 80% train and 20% test.
+# Input
+data = [1,2,3,4,5,6,7,8,9,10]
+# Output
+Train: [1,2,3,4,5,6,7,8]
+Test: [9,10]
+# Conceptual Question
+Q: Why is train-test split necessary?
