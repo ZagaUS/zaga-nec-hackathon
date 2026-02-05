@@ -2,14 +2,15 @@
 
 ## Data Structures & Logic
 
-Q1. Find Common Elements (No Duplicates)
+Q1. Dictionary Value Aggregation
+
 # Problem:
-Find common elements between two lists without duplicates.
+Sum values of duplicate keys from a list of tuples.
 # Sample Input:
-a = [10, 20, 30, 40, 50, 20]
-b = [30, 60, 20, 70]
+records = [("a", 10), ("b", 20), ("a", 5), ("c", 7), ("b", 3)]
 # Sample Output:
-[20, 30]
+{'a': 15, 'b': 23, 'c': 7}
+
 
 
 ________________________________________
@@ -17,18 +18,18 @@ ________________________________________
 
 ## Coding for ML Context
 
-Q1. Fill Missing Scores with Median
+Q1. Encode Education Level
 # Problem:
-Replace missing scores with median score.
+Encode education (UG → 0, PG → 1, PhD → 2).
 # Input:
 data = [
-    {"score": 85},
-    {"score": None},
-    {"score": 90},
-    {"score": 75}
+    {"education": "UG"},
+    {"education": "PG"},
+    {"education": "PhD"}
 ]
 # Output:
-[{'score': 85}, {'score': 85.0}, {'score': 90}, {'score': 75}]
+[{'education': 0}, {'education': 1}, {'education': 2}]
+
 
 ________________________________________
 
@@ -36,23 +37,21 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 1 – One-Hot Encoding
-# Problem:
-You have a dataset of products with category and price.
-Convert the category column into one-hot encoded features.
+Question 1 – Normalization
+## Problem:
+Given a dataset with height and weight, normalize each column between 0 and 1.
 # Input:
 data = [
-    {"category": "Electronics", "price": 1200},
-    {"category": "Clothing", "price": 500},
-    {"category": "Electronics", "price": 1500},
-    {"category": "Furniture", "price": 700}
+    {"height": 160, "weight": 60},
+    {"height": 170, "weight": 70},
+    {"height": 180, "weight": 80}
 ]
 # Output:
 [
- {'price': 1200, 'Electronics': 1, 'Clothing': 0, 'Furniture': 0},
- {'price': 500, 'Electronics': 0, 'Clothing': 1, 'Furniture': 0},
- {'price': 1500, 'Electronics': 1, 'Clothing': 0, 'Furniture': 0},
- {'price': 700, 'Electronics': 0, 'Clothing': 0, 'Furniture': 1}
+ {'height': 0.0, 'weight': 0.0},
+ {'height': 0.5, 'weight': 0.5},
+ {'height': 1.0, 'weight': 1.0}
 ]
-## Conceptual Question:
-Q2: What is the advantage of one-hot encoding over label encoding for categorical variables?
+ # Conceptual Question:
+Q-2 : Why do we normalize features before training some ML models?
+
