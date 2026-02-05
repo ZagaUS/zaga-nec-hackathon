@@ -1,64 +1,46 @@
 # CATEGORY-1
 
 ## Data Structures & Logic
+Q1. Find Longest Word
 
-Q1. Merge Two Dictionaries (Sum Values)
 # Problem:
-Merge dictionaries by summing common keys.
+Find the longest word from the given sentence.
 # Sample Input:
-d1 = {"a": 5, "b": 10}
-d2 = {"b": 3, "c": 7}
+sentence = "machine learning builds intelligent systems"
 # Sample Output:
-{'a': 5, 'b': 13, 'c': 7}
-
-
-
-
-
+intelligent
 ________________________________________
 # CATEGORY-2
 
 ## Coding for ML Context
 
-Q1. Count Missing Values
+Q1. Convert Date to Multiple Features
 # Problem:
-Count missing values per column.
+Extract year and month from date.
 # Input:
-data = [
-    {"age": None, "salary": 50000},
-    {"age": 30, "salary": None}
-]
+data = [{"date": "2023-07-15"}]
 # Output:
-{'age': 1, 'salary': 1}
-
-
-
-
-
-
+{'year': 2023, 'month': 7}
 
 ________________________________________
 
 # CATEGORY-3
 
 ## ML Fundamentals
-Question 1 – Simple Z-Score Normalization
+Question 1 – Simple Feature Scaling for ML
 # Problem:
-Normalize salary using z-score: z=(x−μ)/σz = (x - \mu)/\sigmaz=(x−μ)/σ
+Scale multiple numeric columns (height, weight) to range 0–1
 # Input:
 data = [
-    {"salary": 40000},
-    {"salary": 50000},
-    {"salary": 60000}
+    {"height": 150, "weight": 50},
+    {"height": 160, "weight": 60},
+    {"height": 170, "weight": 80}
 ]
 # Output:
 [
- {'salary': -1.224744871391589},
- {'salary': 0.0},
- {'salary': 1.224744871391589}
+ {'height': 0.0, 'weight': 0.0},
+ {'height': 0.5, 'weight': 0.3333333333},
+ {'height': 1.0, 'weight': 1.0}
 ]
 # Conceptual Question:
-Q: When is z-score normalization preferred over min-max normalization?
-
-
-
+Q: Why do we scale features for models like KNN?
