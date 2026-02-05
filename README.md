@@ -2,30 +2,41 @@
 
 ## Data Structures & Logic
 
-Q1. Group Tuples by First Element
+Q1. Count Uppercase and Lowercase Letters
 # Problem:
-Group values from a list of tuples based on the first element.
+Count uppercase and lowercase letters in a string.
 # Sample Input:
-data = [("x", 1), ("y", 2), ("x", 3), ("y", 4)]
+text = "AIandMLAreFUN"
 # Sample Output:
-{'x': [1, 3], 'y': [2, 4]}
-
+Uppercase: 7
+Lowercase: 6
 
 ________________________________________
 # CATEGORY-2
 
 ## Coding for ML Context
 
-Q1. Create Interaction Feature
-# Problem:
-Create salary_per_age = salary / age.
+Q1. Fill Missing Score and Encode Pass/Fail
+
+## Problem:
+1.	Replace missing score with mean score
+2.	Encode result (Pass → 1, Fail → 0)
+3.	Remove records with missing name
 # Input:
 data = [
-    {"age": 25, "salary": 50000},
-    {"age": 40, "salary": 80000}
+    {"name": "Alice", "score": 85, "result": "Pass"},
+    {"name": "Bob", "score": None, "result": "Fail"},
+    {"name": None, "score": 90, "result": "Pass"},
+    {"name": "Charlie", "score": 70, "result": "Pass"}
 ]
 # Output:
-[2000.0, 2000.0]
+[
+ {'name': 'Alice', 'score': 85, 'result': 1},
+ {'name': 'Bob', 'score': 78, 'result': 0},
+ {'name': 'Charlie', 'score': 70, 'result': 1}
+]
+
+
 
 ________________________________________
 
@@ -33,21 +44,23 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 1 – Handle Class Imbalance by Undersampling
+Question 1 – Normalize Feature Using Min-Max Scaling
 ## Problem
-Reduce majority class samples to match minority class count.
+Normalize the feature age using Min-Max scaling without libraries.
 # Input
 data = [
-    {"label": 0},
-    {"label": 0},
-    {"label": 0},
-    {"label": 1}
+    {"age": 18},
+    {"age": 25},
+    {"age": 40},
+    {"age": 60}
 ]
 # Output
-[{'label': 0}, {'label': 1}]
+[0.0, 0.1667, 0.4583, 1.0]
 
-# Conceptual Question
-Q: Why handle class imbalance?
+## Conceptual Question
+Q: Why is feature scaling important?
+
+
 
 
 
