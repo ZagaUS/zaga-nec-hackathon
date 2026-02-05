@@ -2,13 +2,15 @@
 
 ## Data Structures & Logic
 
-Q1. Palindrome Check Ignoring Spaces
+Q1. Rotate List by K Positions
 # Problem:
-Check if the given string is a palindrome (ignore spaces and case).
+Rotate a list to the right by k positions.
 # Sample Input:
-text = "Never odd or even"
+arr = [10, 20, 30, 40, 50]
+k = 2
 # Sample Output:
-Palindrome
+[40, 50, 10, 20, 30]
+
 
 
 
@@ -17,17 +19,16 @@ ________________________________________
 
 ## Coding for ML Context
 
-Q1. Normalize Salary Using Min-Max Scaling
+Q1. Feature Selection
 # Problem:
-Scale salary between 0 and 1.
+Keep only numeric features.
 # Input:
 data = [
-    {"salary": 40000},
-    {"salary": 60000},
-    {"salary": 80000}
+    {"age": 25, "name": "A", "salary": 50000}
 ]
 # Output:
-[0.0, 0.5, 1.0]
+[{'age': 25, 'salary': 50000}]
+
 
 
 
@@ -38,23 +39,26 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 1 – Feature Interaction
-## Problem:
-You have a dataset with experience_years and education_level (Bachelor=1, Master=2, PhD=3).
-Create a new feature experience_edu = experience_years * education_level.
+Question 1 – Handling Missing Categorical Values
+# Problem:
+You are given a dataset of customers with job_role. Fill missing job_role with "Unknown" and encode as integers (assign unique integer per category).
 # Input:
 data = [
-    {"experience_years": 2, "education_level": 1},
-    {"experience_years": 5, "education_level": 2},
-    {"experience_years": 10, "education_level": 3}
+    {"name": "Alice", "job_role": "Engineer"},
+    {"name": "Bob", "job_role": None},
+    {"name": "Charlie", "job_role": "Analyst"},
+    {"name": "David", "job_role": "Engineer"}
 ]
 # Output:
 [
- {'experience_years': 2, 'education_level': 1, 'experience_edu': 2},
- {'experience_years': 5, 'education_level': 2, 'experience_edu': 10},
- {'experience_years': 10, 'education_level': 3, 'experience_edu': 30}
+ {'name': 'Alice', 'job_role': 0},
+ {'name': 'Bob', 'job_role': 2},
+ {'name': 'Charlie', 'job_role': 1},
+ {'name': 'David', 'job_role': 0}
 ]
-# Conceptual Question:
-Q: Why might interaction features improve model performance?
+# Conceptual Question:	
+Q: Why do we encode categorical variables as integers?
+
+
 
 
