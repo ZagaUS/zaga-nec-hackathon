@@ -2,14 +2,15 @@
 
 ## Data Structures & Logic
 
-Q1. Rotate List by K Positions
+Q1. Merge Two Dictionaries (Sum Values)
 # Problem:
-Rotate a list to the right by k positions.
+Merge dictionaries by summing common keys.
 # Sample Input:
-arr = [10, 20, 30, 40, 50]
-k = 2
+d1 = {"a": 5, "b": 10}
+d2 = {"b": 3, "c": 7}
 # Sample Output:
-[40, 50, 10, 20, 30]
+{'a': 5, 'b': 13, 'c': 7}
+
 
 
 
@@ -19,15 +20,18 @@ ________________________________________
 
 ## Coding for ML Context
 
-Q1. Feature Selection
+Q1. Count Missing Values
 # Problem:
-Keep only numeric features.
+Count missing values per column.
 # Input:
 data = [
-    {"age": 25, "name": "A", "salary": 50000}
+    {"age": None, "salary": 50000},
+    {"age": 30, "salary": None}
 ]
 # Output:
-[{'age': 25, 'salary': 50000}]
+{'age': 1, 'salary': 1}
+
+
 
 
 
@@ -38,27 +42,23 @@ ________________________________________
 # CATEGORY-3
 
 ## ML Fundamentals
-
-Question 1 – Handling Missing Categorical Values
+Question 1 – Simple Z-Score Normalization
 # Problem:
-You are given a dataset of customers with job_role. Fill missing job_role with "Unknown" and encode as integers (assign unique integer per category).
+Normalize salary using z-score: z=(x−μ)/σz = (x - \mu)/\sigmaz=(x−μ)/σ
 # Input:
 data = [
-    {"name": "Alice", "job_role": "Engineer"},
-    {"name": "Bob", "job_role": None},
-    {"name": "Charlie", "job_role": "Analyst"},
-    {"name": "David", "job_role": "Engineer"}
+    {"salary": 40000},
+    {"salary": 50000},
+    {"salary": 60000}
 ]
 # Output:
 [
- {'name': 'Alice', 'job_role': 0},
- {'name': 'Bob', 'job_role': 2},
- {'name': 'Charlie', 'job_role': 1},
- {'name': 'David', 'job_role': 0}
+ {'salary': -1.224744871391589},
+ {'salary': 0.0},
+ {'salary': 1.224744871391589}
 ]
-# Conceptual Question:	
-Q: Why do we encode categorical variables as integers?
-
+# Conceptual Question:
+Q: When is z-score normalization preferred over min-max normalization?
 
 
 
