@@ -2,14 +2,13 @@
 
 ## Data Structures & Logic
 
-Q1. Dictionary Value Aggregation
-
+Q1. Palindrome Check Ignoring Spaces
 # Problem:
-Sum values of duplicate keys from a list of tuples.
+Check if the given string is a palindrome (ignore spaces and case).
 # Sample Input:
-records = [("a", 10), ("b", 20), ("a", 5), ("c", 7), ("b", 3)]
+text = "Never odd or even"
 # Sample Output:
-{'a': 15, 'b': 23, 'c': 7}
+Palindrome
 
 
 
@@ -18,17 +17,19 @@ ________________________________________
 
 ## Coding for ML Context
 
-Q1. Encode Education Level
+Q4. Normalize Salary Using Min-Max Scaling
 # Problem:
-Encode education (UG → 0, PG → 1, PhD → 2).
+Scale salary between 0 and 1.
 # Input:
 data = [
-    {"education": "UG"},
-    {"education": "PG"},
-    {"education": "PhD"}
+    {"salary": 40000},
+    {"salary": 60000},
+    {"salary": 80000}
 ]
 # Output:
-[{'education': 0}, {'education': 1}, {'education': 2}]
+[0.0, 0.5, 1.0]
+
+
 
 
 ________________________________________
@@ -37,21 +38,23 @@ ________________________________________
 
 ## ML Fundamentals
 
-Question 1 – Normalization
+Question 4 – Feature Interaction
 ## Problem:
-Given a dataset with height and weight, normalize each column between 0 and 1.
+You have a dataset with experience_years and education_level (Bachelor=1, Master=2, PhD=3).
+Create a new feature experience_edu = experience_years * education_level.
 # Input:
 data = [
-    {"height": 160, "weight": 60},
-    {"height": 170, "weight": 70},
-    {"height": 180, "weight": 80}
+    {"experience_years": 2, "education_level": 1},
+    {"experience_years": 5, "education_level": 2},
+    {"experience_years": 10, "education_level": 3}
 ]
 # Output:
 [
- {'height': 0.0, 'weight': 0.0},
- {'height': 0.5, 'weight': 0.5},
- {'height': 1.0, 'weight': 1.0}
+ {'experience_years': 2, 'education_level': 1, 'experience_edu': 2},
+ {'experience_years': 5, 'education_level': 2, 'experience_edu': 10},
+ {'experience_years': 10, 'education_level': 3, 'experience_edu': 30}
 ]
- # Conceptual Question:
-Q-2 : Why do we normalize features before training some ML models?
+# Conceptual Question:
+Q: Why might interaction features improve model performance?
+
 
