@@ -3,5 +3,5 @@ result = []
     if isdigit(data):        
         result = data
     else:
-        break
+        
 print(result)
