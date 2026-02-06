@@ -38,7 +38,7 @@ data = [
 ]
 # Output:
 [
- {'height': 0.0, 'weight': 0.0},
+ {'height': 0.0, 'weight': 0.0},OPEMOP/DSD,d
  {'height': 0.5, 'weight': 0.3333333333},
  {'height': 1.0, 'weight': 1.0}
 ]
