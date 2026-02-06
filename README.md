@@ -18,7 +18,6 @@ ________________________________________
 # CATEGORY-2
 
 ## Coding for ML Context
-
 Q1. Feature Selection
 # Problem:
 Keep only numeric features.
