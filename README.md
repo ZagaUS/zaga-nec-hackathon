@@ -1,5 +1,6 @@
 # CATEGORY-1
 
+
 ## Data Structures & Logic
 Q1. Find Element with Maximum Frequency
 # Problem:
@@ -8,7 +9,6 @@ Print the element that appears the most in a list.
 nums = [4, 1, 2, 2, 3, 2, 4, 4, 4]
 # Sample Output:
 4
-
 ________________________________________
 # CATEGORY-2
 
