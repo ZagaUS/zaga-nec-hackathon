@@ -1,0 +1,5 @@
+nums = eval(input("Enter the numbers: "))
+k = input("enter the k:")
+k = int(k)
+k = k % len(nums)
+print(nums[-k:] + nums[:-k])
